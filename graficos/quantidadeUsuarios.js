@@ -1,7 +1,7 @@
 import { getCSS, tickConfig, criarGrafico } from "./common.js"
 
 async function quantidadeUsuariosPorRede() {
-    const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json'
+    const url = 'https://sergiocalazans.github.io/api-redes-sociais/data/numero-usuarios.json'
     const res = await fetch(url)
     const dados = await res.json()
     const nomeDasRedes = Object.keys(dados)
